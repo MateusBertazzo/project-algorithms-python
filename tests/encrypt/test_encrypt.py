@@ -7,6 +7,6 @@ def test_encrypt_message():
         encrypt_message("message", "olá")
     with pytest.raises(TypeError, match="tipo inválido para message"):
         encrypt_message(123, 1)
-    assert encrypt_message("message", 1) == "e_messag"
+    assert encrypt_message("message", 1) == "m_egasse"
 
     assert encrypt_message("message", 18) == "egassem"
